@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Outfit:wght@100;200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #000928;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading {
+  width: 50%;
+  padding: 50px;
+}
+
+.container .heading .head {
+  color: white;
+  font-weight: 400;
+  padding-bottom: 10px;
+  font-size: 48px;
+  border-bottom: 3px solid pink;
+}
+.container .heading .head .spn {
+  color: pink;
+  font-weight: 50;
+}
+
+.container .box {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container .box .dream img {
+  width: 100%;
+  padding: 20px;
+  filter: blur(18px) saturate(0%);
+  border-radius: 20px;
+  transition: all 0.8s ease-in-out;
+}
+
+.container .box .dream img:hover {
+  width: 120%;
+  filter: blur(0px) saturate(100%) drop-shadow(2px 3px 25px #00114d);
+  transition: all 0.8s ease-in-out;
+  z-index: 1;
+  padding: 0;
+}
+
+.container .btn {
+  margin: 40px 0 70px 0;
+  background: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+}
+
+.container .btn a {
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}

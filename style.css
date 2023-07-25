@@ -41,12 +41,26 @@ body {
   max-width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container .box .dream {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
   width: 50%;
+}
+
+.container .box .dream:nth-child(2),
+.container .box .dream:nth-child(3) {
+  align-items: center;
+}
+
+.container .box .dream:nth-child(4) {
+  align-items: end;
 }
 
 .container .box .dream img {
@@ -54,15 +68,22 @@ body {
   padding: 20px;
   filter: blur(18px) saturate(0%);
   border-radius: 20px;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .container .box .dream img:hover {
-  width: 120%;
+  width: 110%;
+  cursor: pointer;
   filter: blur(0px) saturate(100%) drop-shadow(2px 3px 25px #00114d);
-  transition: all 0.8s ease-in-out;
-  z-index: 1;
+  transition: all 0.6s ease-in-out;
+  border: white 2px;
+  z-index: 100;
   padding: 0;
+  transform: scale(100%);
+}
+
+.container .box .dream img.clicked {
+  transform: scale(200%);
 }
 
 .container .btn {

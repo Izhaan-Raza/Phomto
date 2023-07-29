@@ -55,32 +55,32 @@ body {
 }
 
 .container .box .dream:nth-child(2),
+.container .box .dream:nth-child(4),
 .container .box .dream:nth-child(3) {
   align-items: center;
 }
 
-.container .box .dream:nth-child(4) {
+.container .box .dream:nth-child(5) {
   align-items: end;
 }
 
 .container .box .dream img {
   width: 100%;
-  padding: 40px;
+  padding: 20px;
   filter: blur(18px) saturate(0%);
   border-radius: 20px;
   transition: all 0.8s ease-in-out;
-  border: rgba(224, 224, 224, 0.5) solid 4px;
+  border: rgba(224, 224, 224, 0) solid 4px;
 }
 
 .container .box .dream img:hover {
-  width: 110%;
+  width: 130%;
   cursor: pointer;
-  filter: blur(0px) saturate(100%) drop-shadow(2px 3px 25px #8c8e94);
+  filter: blur(0px) saturate(100%) drop-shadow(2px 3px 25px #f584ff);
   transition: all 0.8s ease-in-out;
   border: white 2px;
-  z-index: 100;
-  display: block;
-  border: white solid 4px;
+  z-index: 1;
+  border: rgb(255, 59, 222) solid 4px;
   padding: 0;
 }
 
